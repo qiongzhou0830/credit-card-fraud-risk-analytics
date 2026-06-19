@@ -29,7 +29,6 @@ The dashboard shows:
 - review workload at different thresholds
 - a simple cost analysis for false positives and missed fraud
 
-![Dashboard Screenshot](dashboard/dashboard_screenshot.png)
 
 ## Data
 
