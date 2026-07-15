@@ -1,0 +1,701 @@
+transaction_id,Amount,fraud_score,fraud_score_for_explanation,selected_threshold,review_decision,risk_notes,threshold_note,prompt_for_optional_llm,template_explanation,llm_explanation
+486,1.0,0.5350200631358848,0.5350200631358848,0.7,Review,"model score 0.535 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V4=3.05, V14=-2.85, V17=2.14; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 486
+Amount: 1.0
+Fraud score: 0.5350200631358848
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.535 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V4=3.05, V14=-2.85, V17=2.14; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.535) is above the selected threshold (0.70). The available signals are: model score 0.535 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V4=3.05, V14=-2.85, V17=2.14; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+525,179.63,0.4769180712877557,0.4769180712877557,0.7,Review,"model score 0.477 is above threshold 0.70; transaction amount is 179.63; large anonymized feature values: V4=4.24, V14=-3.43, V16=3.00; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 525
+Amount: 179.63
+Fraud score: 0.4769180712877557
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.477 is above threshold 0.70; transaction amount is 179.63; large anonymized feature values: V4=4.24, V14=-3.43, V16=3.00; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.477) is above the selected threshold (0.70). The available signals are: model score 0.477 is above threshold 0.70; transaction amount is 179.63; large anonymized feature values: V4=4.24, V14=-3.43, V16=3.00; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+983,172.68,0.4356835145285722,0.4356835145285722,0.7,Review,"model score 0.436 is above threshold 0.70; transaction amount is 172.68; large anonymized feature values: V3=-2.42, V14=-2.15, V1=1.71; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 983
+Amount: 172.68
+Fraud score: 0.4356835145285722
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.436 is above threshold 0.70; transaction amount is 172.68; large anonymized feature values: V3=-2.42, V14=-2.15, V1=1.71; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.436) is above the selected threshold (0.70). The available signals are: model score 0.436 is above threshold 0.70; transaction amount is 172.68; large anonymized feature values: V3=-2.42, V14=-2.15, V1=1.71; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+764,5.6,0.4274117337800413,0.4274117337800413,0.7,Review,"model score 0.427 is above threshold 0.70; transaction amount is 5.60; large anonymized feature values: V4=4.01, V19=-2.88, V14=-2.33; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 764
+Amount: 5.6
+Fraud score: 0.4274117337800413
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.427 is above threshold 0.70; transaction amount is 5.60; large anonymized feature values: V4=4.01, V19=-2.88, V14=-2.33; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.427) is above the selected threshold (0.70). The available signals are: model score 0.427 is above threshold 0.70; transaction amount is 5.60; large anonymized feature values: V4=4.01, V19=-2.88, V14=-2.33; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+12,4.8,0.2741256844177421,0.2741256844177421,0.7,Review,"model score 0.274 is above threshold 0.70; transaction amount is 4.80; large anonymized feature values: V17=3.53, V11=3.46, V2=2.33; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 12
+Amount: 4.8
+Fraud score: 0.2741256844177421
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.274 is above threshold 0.70; transaction amount is 4.80; large anonymized feature values: V17=3.53, V11=3.46, V2=2.33; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.274) is above the selected threshold (0.70). The available signals are: model score 0.274 is above threshold 0.70; transaction amount is 4.80; large anonymized feature values: V17=3.53, V11=3.46, V2=2.33; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+221,14.23,0.2032388215167679,0.2032388215167679,0.7,Review,"model score 0.203 is above threshold 0.70; transaction amount is 14.23; large anonymized feature values: V14=-3.18, V18=2.31, V17=2.05; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 221
+Amount: 14.23
+Fraud score: 0.2032388215167679
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.203 is above threshold 0.70; transaction amount is 14.23; large anonymized feature values: V14=-3.18, V18=2.31, V17=2.05; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.203) is above the selected threshold (0.70). The available signals are: model score 0.203 is above threshold 0.70; transaction amount is 14.23; large anonymized feature values: V14=-3.18, V18=2.31, V17=2.05; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+337,0.89,0.1925685076598821,0.1925685076598821,0.7,Review,"model score 0.193 is above threshold 0.70; transaction amount is 0.89; large anonymized feature values: V14=-3.75, V11=2.62, V17=2.43; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 337
+Amount: 0.89
+Fraud score: 0.1925685076598821
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.193 is above threshold 0.70; transaction amount is 0.89; large anonymized feature values: V14=-3.75, V11=2.62, V17=2.43; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.193) is above the selected threshold (0.70). The available signals are: model score 0.193 is above threshold 0.70; transaction amount is 0.89; large anonymized feature values: V14=-3.75, V11=2.62, V17=2.43; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+798,30.0,0.1887550076811962,0.1887550076811962,0.7,Review,"model score 0.189 is above threshold 0.70; transaction amount is 30.00; large anonymized feature values: V3=-2.60, V14=-2.25, V1=1.97; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 798
+Amount: 30.0
+Fraud score: 0.1887550076811962
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.189 is above threshold 0.70; transaction amount is 30.00; large anonymized feature values: V3=-2.60, V14=-2.25, V1=1.97; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.189) is above the selected threshold (0.70). The available signals are: model score 0.189 is above threshold 0.70; transaction amount is 30.00; large anonymized feature values: V3=-2.60, V14=-2.25, V1=1.97; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+507,170.87,0.1825571910789289,0.1825571910789289,0.7,Review,"model score 0.183 is above threshold 0.70; transaction amount is 170.87; large anonymized feature values: V4=2.17, V3=2.13, V19=-1.68; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 507
+Amount: 170.87
+Fraud score: 0.1825571910789289
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.183 is above threshold 0.70; transaction amount is 170.87; large anonymized feature values: V4=2.17, V3=2.13, V19=-1.68; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.183) is above the selected threshold (0.70). The available signals are: model score 0.183 is above threshold 0.70; transaction amount is 170.87; large anonymized feature values: V4=2.17, V3=2.13, V19=-1.68; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+130,1.0,0.1785363793632819,0.1785363793632819,0.7,Review,"model score 0.179 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V15=1.36, V4=1.27, V1=1.20; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 130
+Amount: 1.0
+Fraud score: 0.1785363793632819
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.179 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V15=1.36, V4=1.27, V1=1.20; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.179) is above the selected threshold (0.70). The available signals are: model score 0.179 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V15=1.36, V4=1.27, V1=1.20; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+372,4.49,0.1780448839533996,0.1780448839533996,0.7,Review,"model score 0.178 is above threshold 0.70; transaction amount is 4.49; large anonymized feature values: V14=-3.73, V3=-2.39, V17=2.33; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 372
+Amount: 4.49
+Fraud score: 0.1780448839533996
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.178 is above threshold 0.70; transaction amount is 4.49; large anonymized feature values: V14=-3.73, V3=-2.39, V17=2.33; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.178) is above the selected threshold (0.70). The available signals are: model score 0.178 is above threshold 0.70; transaction amount is 4.49; large anonymized feature values: V14=-3.73, V3=-2.39, V17=2.33; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+390,1.0,0.1724604217788226,0.1724604217788226,0.7,Review,"model score 0.172 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V14=-1.42, V4=1.26, V1=1.26; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 390
+Amount: 1.0
+Fraud score: 0.1724604217788226
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.172 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V14=-1.42, V4=1.26, V1=1.26; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.172) is above the selected threshold (0.70). The available signals are: model score 0.172 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V14=-1.42, V4=1.26, V1=1.26; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+773,0.77,0.1640735088402487,0.1640735088402487,0.7,Review,"model score 0.164 is above threshold 0.70; transaction amount is 0.77; large anonymized feature values: V4=2.92, V8=-2.40, V9=-1.53; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 773
+Amount: 0.77
+Fraud score: 0.1640735088402487
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.164 is above threshold 0.70; transaction amount is 0.77; large anonymized feature values: V4=2.92, V8=-2.40, V9=-1.53; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.164) is above the selected threshold (0.70). The available signals are: model score 0.164 is above threshold 0.70; transaction amount is 0.77; large anonymized feature values: V4=2.92, V8=-2.40, V9=-1.53; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+353,2.28,0.1576973959272061,0.1576973959272061,0.7,Review,"model score 0.158 is above threshold 0.70; transaction amount is 2.28; large anonymized feature values: V4=3.44, V5=3.28, V1=-2.42; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 353
+Amount: 2.28
+Fraud score: 0.1576973959272061
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.158 is above threshold 0.70; transaction amount is 2.28; large anonymized feature values: V4=3.44, V5=3.28, V1=-2.42; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.158) is above the selected threshold (0.70). The available signals are: model score 0.158 is above threshold 0.70; transaction amount is 2.28; large anonymized feature values: V4=3.44, V5=3.28, V1=-2.42; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+663,1.0,0.1505252783358644,0.1505252783358644,0.7,Review,"model score 0.151 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V4=1.48, V15=1.34, V19=-1.18; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 663
+Amount: 1.0
+Fraud score: 0.1505252783358644
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.151 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V4=1.48, V15=1.34, V19=-1.18; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.151) is above the selected threshold (0.70). The available signals are: model score 0.151 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V4=1.48, V15=1.34, V19=-1.18; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+270,354.88,0.1498858326587888,0.1498858326587888,0.7,Review,"model score 0.150 is above threshold 0.70; transaction amount is 354.88; large anonymized feature values: V7=2.50, V14=-1.99, V10=-1.72; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 270
+Amount: 354.88
+Fraud score: 0.1498858326587888
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.150 is above threshold 0.70; transaction amount is 354.88; large anonymized feature values: V7=2.50, V14=-1.99, V10=-1.72; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.150) is above the selected threshold (0.70). The available signals are: model score 0.150 is above threshold 0.70; transaction amount is 354.88; large anonymized feature values: V7=2.50, V14=-1.99, V10=-1.72; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+167,1.0,0.1448482147975459,0.1448482147975459,0.7,Review,"model score 0.145 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V4=2.77, V8=-2.38, V2=2.23; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 167
+Amount: 1.0
+Fraud score: 0.1448482147975459
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.145 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V4=2.77, V8=-2.38, V2=2.23; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.145) is above the selected threshold (0.70). The available signals are: model score 0.145 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V4=2.77, V8=-2.38, V2=2.23; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+127,0.76,0.1419712193451529,0.1419712193451529,0.7,Review,"model score 0.142 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.18, V1=2.06, V14=-2.03; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 127
+Amount: 0.76
+Fraud score: 0.1419712193451529
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.142 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.18, V1=2.06, V14=-2.03; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.142) is above the selected threshold (0.70). The available signals are: model score 0.142 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.18, V1=2.06, V14=-2.03; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+939,50.0,0.1414461332678046,0.1414461332678046,0.7,Review,"model score 0.141 is above threshold 0.70; transaction amount is 50.00; large anonymized feature values: V16=-2.93, V3=2.66, V10=1.99; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 939
+Amount: 50.0
+Fraud score: 0.1414461332678046
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.141 is above threshold 0.70; transaction amount is 50.00; large anonymized feature values: V16=-2.93, V3=2.66, V10=1.99; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.141) is above the selected threshold (0.70). The available signals are: model score 0.141 is above threshold 0.70; transaction amount is 50.00; large anonymized feature values: V16=-2.93, V3=2.66, V10=1.99; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+678,26.2,0.1403862674785808,0.1403862674785808,0.7,Review,"model score 0.140 is above threshold 0.70; transaction amount is 26.20; large anonymized feature values: V4=2.68, V11=-1.76, V9=-1.72; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 678
+Amount: 26.2
+Fraud score: 0.1403862674785808
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.140 is above threshold 0.70; transaction amount is 26.20; large anonymized feature values: V4=2.68, V11=-1.76, V9=-1.72; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.140) is above the selected threshold (0.70). The available signals are: model score 0.140 is above threshold 0.70; transaction amount is 26.20; large anonymized feature values: V4=2.68, V11=-1.76, V9=-1.72; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+55,21.48,0.1308599385911117,0.1308599385911117,0.7,Review,"model score 0.131 is above threshold 0.70; transaction amount is 21.48; large anonymized feature values: V5=3.03, V14=-2.19, V1=-2.08; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 55
+Amount: 21.48
+Fraud score: 0.1308599385911117
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.131 is above threshold 0.70; transaction amount is 21.48; large anonymized feature values: V5=3.03, V14=-2.19, V1=-2.08; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.131) is above the selected threshold (0.70). The available signals are: model score 0.131 is above threshold 0.70; transaction amount is 21.48; large anonymized feature values: V5=3.03, V14=-2.19, V1=-2.08; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+222,129.18,0.1291996356132276,0.1291996356132276,0.7,Review,"model score 0.129 is above threshold 0.70; transaction amount is 129.18; large anonymized feature values: V25=-2.06, V3=-1.65, V17=1.49; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 222
+Amount: 129.18
+Fraud score: 0.1291996356132276
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.129 is above threshold 0.70; transaction amount is 129.18; large anonymized feature values: V25=-2.06, V3=-1.65, V17=1.49; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.129) is above the selected threshold (0.70). The available signals are: model score 0.129 is above threshold 0.70; transaction amount is 129.18; large anonymized feature values: V25=-2.06, V3=-1.65, V17=1.49; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+746,0.76,0.1233495238770193,0.1233495238770193,0.7,Review,"model score 0.123 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.32, V17=2.21, V1=2.12; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 746
+Amount: 0.76
+Fraud score: 0.1233495238770193
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.123 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.32, V17=2.21, V1=2.12; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.123) is above the selected threshold (0.70). The available signals are: model score 0.123 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.32, V17=2.21, V1=2.12; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+6,1.0,0.1219973272158156,0.1219973272158156,0.7,Review,"model score 0.122 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V8=-6.35, V3=-3.38, V5=2.61; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 6
+Amount: 1.0
+Fraud score: 0.1219973272158156
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.122 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V8=-6.35, V3=-3.38, V5=2.61; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.122) is above the selected threshold (0.70). The available signals are: model score 0.122 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V8=-6.35, V3=-3.38, V5=2.61; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+427,0.76,0.120476443646733,0.120476443646733,0.7,Review,"model score 0.120 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.36, V1=2.09, V14=-1.97; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 427
+Amount: 0.76
+Fraud score: 0.120476443646733
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.120 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.36, V1=2.09, V14=-1.97; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.120) is above the selected threshold (0.70). The available signals are: model score 0.120 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.36, V1=2.09, V14=-1.97; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+782,12.31,0.1195998876165318,0.1195998876165318,0.7,Review,"model score 0.120 is above threshold 0.70; transaction amount is 12.31; large anonymized feature values: V14=-2.51, V17=1.72, V2=1.40; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 782
+Amount: 12.31
+Fraud score: 0.1195998876165318
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.120 is above threshold 0.70; transaction amount is 12.31; large anonymized feature values: V14=-2.51, V17=1.72, V2=1.40; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.120) is above the selected threshold (0.70). The available signals are: model score 0.120 is above threshold 0.70; transaction amount is 12.31; large anonymized feature values: V14=-2.51, V17=1.72, V2=1.40; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+952,1.0,0.1190849827486484,0.1190849827486484,0.7,Review,"model score 0.119 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V14=-1.57, V1=1.34, V24=-1.13; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 952
+Amount: 1.0
+Fraud score: 0.1190849827486484
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.119 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V14=-1.57, V1=1.34, V24=-1.13; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.119) is above the selected threshold (0.70). The available signals are: model score 0.119 is above threshold 0.70; transaction amount is 1.00; large anonymized feature values: V14=-1.57, V1=1.34, V24=-1.13; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+844,403.0,0.1187106134522596,0.1187106134522596,0.7,Review,"model score 0.119 is above threshold 0.70; transaction amount is 403.00; large anonymized feature values: V19=2.77, V5=-2.25, V7=1.63; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 844
+Amount: 403.0
+Fraud score: 0.1187106134522596
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.119 is above threshold 0.70; transaction amount is 403.00; large anonymized feature values: V19=2.77, V5=-2.25, V7=1.63; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.119) is above the selected threshold (0.70). The available signals are: model score 0.119 is above threshold 0.70; transaction amount is 403.00; large anonymized feature values: V19=2.77, V5=-2.25, V7=1.63; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+35,69.32,0.1170428592566625,0.1170428592566625,0.7,Review,"model score 0.117 is above threshold 0.70; transaction amount is 69.32; large anonymized feature values: V3=-2.13, V1=1.97, V14=-1.61; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 35
+Amount: 69.32
+Fraud score: 0.1170428592566625
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.117 is above threshold 0.70; transaction amount is 69.32; large anonymized feature values: V3=-2.13, V1=1.97, V14=-1.61; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.117) is above the selected threshold (0.70). The available signals are: model score 0.117 is above threshold 0.70; transaction amount is 69.32; large anonymized feature values: V3=-2.13, V1=1.97, V14=-1.61; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+761,0.76,0.1156342109021844,0.1156342109021844,0.7,Review,"model score 0.116 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V14=-1.56, V6=-1.43, V1=1.28; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 761
+Amount: 0.76
+Fraud score: 0.1156342109021844
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.116 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V14=-1.56, V6=-1.43, V1=1.28; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.116) is above the selected threshold (0.70). The available signals are: model score 0.116 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V14=-1.56, V6=-1.43, V1=1.28; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+971,12.31,0.1124525768829112,0.1124525768829112,0.7,Review,"model score 0.112 is above threshold 0.70; transaction amount is 12.31; large anonymized feature values: V12=-3.09, V17=2.96, V14=-2.32; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 971
+Amount: 12.31
+Fraud score: 0.1124525768829112
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.112 is above threshold 0.70; transaction amount is 12.31; large anonymized feature values: V12=-3.09, V17=2.96, V14=-2.32; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.112) is above the selected threshold (0.70). The available signals are: model score 0.112 is above threshold 0.70; transaction amount is 12.31; large anonymized feature values: V12=-3.09, V17=2.96, V14=-2.32; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+806,0.76,0.1110226276413429,0.1110226276413429,0.7,Review,"model score 0.111 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.37, V14=-2.23, V1=2.09; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 806
+Amount: 0.76
+Fraud score: 0.1110226276413429
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.111 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.37, V14=-2.23, V1=2.09; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.111) is above the selected threshold (0.70). The available signals are: model score 0.111 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V3=-3.37, V14=-2.23, V1=2.09; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+852,34.5,0.1083673472919429,0.1083673472919429,0.7,Review,"model score 0.108 is above threshold 0.70; transaction amount is 34.50; large anonymized feature values: V18=2.75, V1=-2.21, V2=-1.31; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 852
+Amount: 34.5
+Fraud score: 0.1083673472919429
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.108 is above threshold 0.70; transaction amount is 34.50; large anonymized feature values: V18=2.75, V1=-2.21, V2=-1.31; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.108) is above the selected threshold (0.70). The available signals are: model score 0.108 is above threshold 0.70; transaction amount is 34.50; large anonymized feature values: V18=2.75, V1=-2.21, V2=-1.31; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+551,12.31,0.1062295531941122,0.1062295531941122,0.7,Review,"model score 0.106 is above threshold 0.70; transaction amount is 12.31; large anonymized feature values: V14=-1.27, V11=1.23, V1=1.16; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 551
+Amount: 12.31
+Fraud score: 0.1062295531941122
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.106 is above threshold 0.70; transaction amount is 12.31; large anonymized feature values: V14=-1.27, V11=1.23, V1=1.16; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.106) is above the selected threshold (0.70). The available signals are: model score 0.106 is above threshold 0.70; transaction amount is 12.31; large anonymized feature values: V14=-1.27, V11=1.23, V1=1.16; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+974,3.79,0.1058125040970856,0.1058125040970856,0.7,Review,"model score 0.106 is above threshold 0.70; transaction amount is 3.79; large anonymized feature values: V4=2.78, V11=-2.09, V9=-1.99; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 974
+Amount: 3.79
+Fraud score: 0.1058125040970856
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.106 is above threshold 0.70; transaction amount is 3.79; large anonymized feature values: V4=2.78, V11=-2.09, V9=-1.99; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.106) is above the selected threshold (0.70). The available signals are: model score 0.106 is above threshold 0.70; transaction amount is 3.79; large anonymized feature values: V4=2.78, V11=-2.09, V9=-1.99; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+429,6.06,0.1057261599323221,0.1057261599323221,0.7,Review,"model score 0.106 is above threshold 0.70; transaction amount is 6.06; large anonymized feature values: V4=2.66, V3=2.33, V19=-1.86; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 429
+Amount: 6.06
+Fraud score: 0.1057261599323221
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.106 is above threshold 0.70; transaction amount is 6.06; large anonymized feature values: V4=2.66, V3=2.33, V19=-1.86; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.106) is above the selected threshold (0.70). The available signals are: model score 0.106 is above threshold 0.70; transaction amount is 6.06; large anonymized feature values: V4=2.66, V3=2.33, V19=-1.86; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+916,527.98,0.1048310853315993,0.1048310853315993,0.7,Review,"model score 0.105 is above threshold 0.70; transaction amount is 527.98; large anonymized feature values: V4=1.92, V11=1.28, V21=1.05; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 916
+Amount: 527.98
+Fraud score: 0.1048310853315993
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.105 is above threshold 0.70; transaction amount is 527.98; large anonymized feature values: V4=1.92, V11=1.28, V21=1.05; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.105) is above the selected threshold (0.70). The available signals are: model score 0.105 is above threshold 0.70; transaction amount is 527.98; large anonymized feature values: V4=1.92, V11=1.28, V21=1.05; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+582,4.72,0.103014250463793,0.103014250463793,0.7,Review,"model score 0.103 is above threshold 0.70; transaction amount is 4.72; large anonymized feature values: V13=2.63, V4=2.52, V12=-2.20; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 582
+Amount: 4.72
+Fraud score: 0.103014250463793
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.103 is above threshold 0.70; transaction amount is 4.72; large anonymized feature values: V13=2.63, V4=2.52, V12=-2.20; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.103) is above the selected threshold (0.70). The available signals are: model score 0.103 is above threshold 0.70; transaction amount is 4.72; large anonymized feature values: V13=2.63, V4=2.52, V12=-2.20; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+219,18.98,0.1006312659472978,0.1006312659472978,0.7,Review,"model score 0.101 is above threshold 0.70; transaction amount is 18.98; large anonymized feature values: V13=2.65, V15=-2.49, V12=-2.34; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 219
+Amount: 18.98
+Fraud score: 0.1006312659472978
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.101 is above threshold 0.70; transaction amount is 18.98; large anonymized feature values: V13=2.65, V15=-2.49, V12=-2.34; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.101) is above the selected threshold (0.70). The available signals are: model score 0.101 is above threshold 0.70; transaction amount is 18.98; large anonymized feature values: V13=2.65, V15=-2.49, V12=-2.34; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+416,1.99,0.0993961748083185,0.0993961748083185,0.7,Review,"model score 0.099 is above threshold 0.70; transaction amount is 1.99; large anonymized feature values: V15=2.13, V19=1.93, V14=-1.74; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 416
+Amount: 1.99
+Fraud score: 0.0993961748083185
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.099 is above threshold 0.70; transaction amount is 1.99; large anonymized feature values: V15=2.13, V19=1.93, V14=-1.74; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.099) is above the selected threshold (0.70). The available signals are: model score 0.099 is above threshold 0.70; transaction amount is 1.99; large anonymized feature values: V15=2.13, V19=1.93, V14=-1.74; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+134,12.13,0.0971593514996389,0.0971593514996389,0.7,Review,"model score 0.097 is above threshold 0.70; transaction amount is 12.13; large anonymized feature values: V4=4.02, V13=2.67, V12=-2.12; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 134
+Amount: 12.13
+Fraud score: 0.0971593514996389
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.097 is above threshold 0.70; transaction amount is 12.13; large anonymized feature values: V4=4.02, V13=2.67, V12=-2.12; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.097) is above the selected threshold (0.70). The available signals are: model score 0.097 is above threshold 0.70; transaction amount is 12.13; large anonymized feature values: V4=4.02, V13=2.67, V12=-2.12; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+855,79.93,0.0925317013899774,0.0925317013899774,0.7,Review,"model score 0.093 is above threshold 0.70; transaction amount is 79.93; large anonymized feature values: V4=3.84, V12=-3.09, V19=-1.88; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 855
+Amount: 79.93
+Fraud score: 0.0925317013899774
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.093 is above threshold 0.70; transaction amount is 79.93; large anonymized feature values: V4=3.84, V12=-3.09, V19=-1.88; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.093) is above the selected threshold (0.70). The available signals are: model score 0.093 is above threshold 0.70; transaction amount is 79.93; large anonymized feature values: V4=3.84, V12=-3.09, V19=-1.88; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+612,872.58,0.0925002908500802,0.0925002908500802,0.7,Review,"model score 0.093 is above threshold 0.70; transaction amount is 872.58; large anonymized feature values: V7=3.36, V5=-2.03, V23=1.91; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 612
+Amount: 872.58
+Fraud score: 0.0925002908500802
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.093 is above threshold 0.70; transaction amount is 872.58; large anonymized feature values: V7=3.36, V5=-2.03, V23=1.91; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.093) is above the selected threshold (0.70). The available signals are: model score 0.093 is above threshold 0.70; transaction amount is 872.58; large anonymized feature values: V7=3.36, V5=-2.03, V23=1.91; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+48,0.76,0.091693677132789,0.091693677132789,0.7,Review,"model score 0.092 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V11=1.60, V2=1.10, V14=-1.06; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 48
+Amount: 0.76
+Fraud score: 0.091693677132789
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.092 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V11=1.60, V2=1.10, V14=-1.06; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.092) is above the selected threshold (0.70). The available signals are: model score 0.092 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V11=1.60, V2=1.10, V14=-1.06; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+395,431.24,0.0910758757404458,0.0910758757404458,0.7,Review,"model score 0.091 is above threshold 0.70; transaction amount is 431.24; large anonymized feature values: V7=2.93, V14=-2.44, V15=-2.37; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 395
+Amount: 431.24
+Fraud score: 0.0910758757404458
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.091 is above threshold 0.70; transaction amount is 431.24; large anonymized feature values: V7=2.93, V14=-2.44, V15=-2.37; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.091) is above the selected threshold (0.70). The available signals are: model score 0.091 is above threshold 0.70; transaction amount is 431.24; large anonymized feature values: V7=2.93, V14=-2.44, V15=-2.37; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+215,374.58,0.090793483470231,0.090793483470231,0.7,Review,"model score 0.091 is above threshold 0.70; transaction amount is 374.58; large anonymized feature values: V7=2.15, V14=-1.46, V10=-1.15; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 215
+Amount: 374.58
+Fraud score: 0.090793483470231
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.091 is above threshold 0.70; transaction amount is 374.58; large anonymized feature values: V7=2.15, V14=-1.46, V10=-1.15; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.091) is above the selected threshold (0.70). The available signals are: model score 0.091 is above threshold 0.70; transaction amount is 374.58; large anonymized feature values: V7=2.15, V14=-1.46, V10=-1.15; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+959,0.76,0.089355153355208,0.089355153355208,0.7,Review,"model score 0.089 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V14=-1.45, V13=1.42, V1=1.33; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 959
+Amount: 0.76
+Fraud score: 0.089355153355208
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.089 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V14=-1.45, V13=1.42, V1=1.33; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.089) is above the selected threshold (0.70). The available signals are: model score 0.089 is above threshold 0.70; transaction amount is 0.76; large anonymized feature values: V14=-1.45, V13=1.42, V1=1.33; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+487,6.96,0.0878791237448101,0.0878791237448101,0.7,Review,"model score 0.088 is above threshold 0.70; transaction amount is 6.96; large anonymized feature values: V4=4.73, V10=2.68, V5=1.73; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 487
+Amount: 6.96
+Fraud score: 0.0878791237448101
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.088 is above threshold 0.70; transaction amount is 6.96; large anonymized feature values: V4=4.73, V10=2.68, V5=1.73; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.088) is above the selected threshold (0.70). The available signals are: model score 0.088 is above threshold 0.70; transaction amount is 6.96; large anonymized feature values: V4=4.73, V10=2.68, V5=1.73; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+756,19.95,0.087794141919741,0.087794141919741,0.7,Review,"model score 0.088 is above threshold 0.70; transaction amount is 19.95; large anonymized feature values: V1=2.14, V16=2.08, V14=-1.80; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 756
+Amount: 19.95
+Fraud score: 0.087794141919741
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.088 is above threshold 0.70; transaction amount is 19.95; large anonymized feature values: V1=2.14, V16=2.08, V14=-1.80; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.088) is above the selected threshold (0.70). The available signals are: model score 0.088 is above threshold 0.70; transaction amount is 19.95; large anonymized feature values: V1=2.14, V16=2.08, V14=-1.80; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
+359,641.86,0.0864855089655966,0.0864855089655966,0.7,Review,"model score 0.086 is above threshold 0.70; transaction amount is 641.86; large anonymized feature values: V5=-3.11, V8=-2.53, V19=-2.34; no merchant, identity, or location details are used",Used the threshold with the best precision-recall balance.,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 359
+Amount: 641.86
+Fraud score: 0.0864855089655966
+Threshold: 0.7
+Decision: Review
+Risk notes: model score 0.086 is above threshold 0.70; transaction amount is 641.86; large anonymized feature values: V5=-3.11, V8=-2.53, V19=-2.34; no merchant, identity, or location details are used
+Threshold note: Used the threshold with the best precision-recall balance.
+
+Write 2 short sentences.
+","This transaction is marked as 'Review' because its fraud score (0.086) is above the selected threshold (0.70). The available signals are: model score 0.086 is above threshold 0.70; transaction amount is 641.86; large anonymized feature values: V5=-3.11, V8=-2.53, V19=-2.34; no merchant, identity, or location details are used. Since the data is anonymized, I do not infer details like merchant, identity, or location.",
