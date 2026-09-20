@@ -59,29 +59,51 @@ def pick_threshold(threshold_file, default_threshold):
         return default_threshold, f"Used default threshold {default_threshold:.2f}."
 
     table = pd.read_csv(threshold_file)
-    threshold_col = next((c for c in table.columns if "threshold" in c.lower() or "cutoff" in c.lower()), None)
+
+    threshold_col = next(
+        (c for c in table.columns if "threshold" in c.lower() or "cutoff" in c.lower()),
+        None
+    )
 
     if threshold_col is None or table.empty:
         return default_threshold, f"Used default threshold {default_threshold:.2f}."
 
-    precision_col = next((c for c in table.columns if "precision" in c.lower()), None)
-    recall_col = next((c for c in table.columns if "recall" in c.lower()), None)
+    # Prefer the business-cost criterion if it is available.
+    if "total_estimated_cost" in table.columns:
+        row = table.loc[table["total_estimated_cost"].idxmin()]
+        return (
+            float(row[threshold_col]),
+            "Used the threshold with the lowest estimated business cost."
+        )
+
+    # Fallback: use best F1 if precision and recall are available.
+    precision_col = next(
+        (c for c in table.columns if "precision" in c.lower()),
+        None
+    )
+    recall_col = next(
+        (c for c in table.columns if "recall" in c.lower()),
+        None
+    )
 
     if precision_col and recall_col:
         temp = table.copy()
-        temp["f1"] = 2 * temp[precision_col] * temp[recall_col] / (
-            temp[precision_col] + temp[recall_col] + 1e-12
+        temp["f1"] = (
+            2 * temp[precision_col] * temp[recall_col]
+            / (temp[precision_col] + temp[recall_col] + 1e-12)
         )
-        row = temp.sort_values("f1", ascending=False).iloc[0]
-        return float(row[threshold_col]), "Used the threshold with the best precision-recall balance."
+        row = temp.loc[temp["f1"].idxmax()]
+        return (
+            float(row[threshold_col]),
+            "Used the threshold with the best precision-recall balance."
+        )
 
-    row = table.iloc[len(table) // 2]
-    return float(row[threshold_col]), "Used a middle threshold from the threshold analysis table."
+    return default_threshold, f"Used default threshold {default_threshold:.2f}."
 
 
 def make_risk_note(row, score_col, amount_col, threshold):
     notes = [
-        f"model score {row[score_col]:.3f} is above threshold {threshold:.2f}"
+        f"model score {row[score_col]:.3f} meets or exceeds threshold {threshold:.2f}"
     ]
 
     if amount_col is not None and pd.notna(row.get(amount_col)):
@@ -93,14 +115,13 @@ def make_risk_note(row, score_col, amount_col, threshold):
         top = sorted(v_cols, key=lambda c: abs(float(row[c])) if pd.notna(row[c]) else 0, reverse=True)[:3]
         notes.append("large anonymized feature values: " + ", ".join([f"{c}={float(row[c]):.2f}" for c in top]))
 
-    notes.append("no merchant, identity, or location details are used")
     return "; ".join(notes)
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--scored", default="data/sample/scored_transactions_sample.csv")
-    parser.add_argument("--thresholds", default="data/processed/threshold_analysis.csv")
+    parser.add_argument("--thresholds", default="data/processed/cost_analysis.csv")
     parser.add_argument("--outdir", default="reports/llm_explanations")
     parser.add_argument("--threshold", type=float, default=0.30)
     parser.add_argument("--top-n", type=int, default=50)
@@ -126,11 +147,14 @@ def main():
     df["review_decision"] = np.where(df["fraud_score_for_explanation"] >= threshold, "Review", "Pass")
 
     flagged = df[df["review_decision"] == "Review"].copy()
+
     if flagged.empty:
-        flagged = df.sort_values("fraud_score_for_explanation", ascending=False).head(args.top_n).copy()
-        flagged["review_decision"] = "Review"
-    else:
-        flagged = flagged.sort_values("fraud_score_for_explanation", ascending=False).head(args.top_n).copy()
+        raise ValueError(
+        f"No transactions have a fraud score >= {threshold:.2f}. "
+        "Check the score column or selected threshold.")
+
+    flagged = (
+        flagged.sort_values("fraud_score_for_explanation", ascending=False).head(args.top_n).copy())
 
     flagged["risk_notes"] = flagged.apply(
         lambda row: make_risk_note(row, score_col, amount_col, threshold),

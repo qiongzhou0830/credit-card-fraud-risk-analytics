@@ -19,10 +19,19 @@ FORBIDDEN_WORDS = [
 
 
 def get_explanation(row):
-    llm_text = str(row.get("llm_explanation", "") or "").strip()
-    if llm_text:
-        return llm_text
-    return str(row.get("template_explanation", "") or "").strip()
+    llm_value = row.get("llm_explanation", "")
+
+    if pd.notna(llm_value):
+        llm_text = str(llm_value).strip()
+        if llm_text:
+            return llm_text
+
+    template_value = row.get("template_explanation", "")
+
+    if pd.notna(template_value):
+        return str(template_value).strip()
+
+    return ""
 
 
 def review_explanation(row):

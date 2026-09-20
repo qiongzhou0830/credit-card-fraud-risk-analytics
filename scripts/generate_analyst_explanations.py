@@ -37,8 +37,8 @@ def make_template_explanation(row):
 
     return (
         f"This transaction is marked as '{decision}' because its fraud score "
-        f"({score:.3f}) is above the selected threshold ({threshold:.2f}). "
-        f"The available signals are: {notes}. Since the data is anonymized, I do not infer details like merchant, identity, or location."
+        f"({score:.3f}) meets or exceeds the selected threshold ({threshold:.2f}). "
+        f"The available model signals are: {notes}."
     )
 
 
