@@ -12,7 +12,7 @@ This project analyzes transaction-level credit card fraud data and builds a mach
 - Use SHAP to find the local model signals behind individual high-risk transactions.
 - Use an LLM to turn verified model evidence into short analyst-facing notes, then run basic faithfulness checks.
 
-# Credit Card Fraud Risk Analytics
+## Overview
 
 This is a small data analytics and machine learning project about credit card fraud detection. I used the Kaggle Credit Card Fraud Detection dataset to practice EDA, model evaluation, threshold analysis, and Tableau dashboarding.
 
@@ -46,7 +46,6 @@ The pipeline is:
 Random Forest score -> threshold decision -> local SHAP signals -> LLM note -> faithfulness checks
 ```
 
-
 ## Data
 
 The original data comes from the Kaggle Credit Card Fraud Detection dataset.
@@ -58,5 +57,3 @@ data/raw/creditcard.csv
 ```
 
 The explanation notebook also requires `shap`, `openai`, and an OpenAI API key stored in the `OPENAI_API_KEY` environment variable. It generates only 10 LLM explanations by default to limit API usage.
-
-
