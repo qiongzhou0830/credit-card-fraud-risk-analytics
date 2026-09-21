@@ -1,18 +1,17 @@
-Project summary:
-I built a fraud classification and risk-scoring pipeline for a highly imbalanced dataset.
-I trained Logistic Regression and Random Forest on a training split, selected the model using validation Average Precision (AP), and selected the review threshold using a simple validation-set cost analysis.
-I then evaluated the fixed model and threshold on an untouched test set.
-For the highest-risk test records sent to review, I used SHAP to identify local model signals that increased each fraud score.
-I sent only the verified score, threshold, amount, and SHAP signals to an LLM to create short analyst notes.
-Finally, I ran simple rule-based checks for missing evidence and unsupported real-world claims.
+
+Explanation-layer summary:
+
+Notebook 02 already selected the final fraud model and review threshold.
+This notebook reused those fixed choices instead of repeating model comparison
+or threshold tuning.
 
 Selected model: Random Forest
 Validation-selected threshold: 0.50
-Final test Average Precision (AP): 0.793
-Final test PR-AUC (trapezoidal): 0.795
-Final test precision at selected threshold: 0.820
-Final test recall at selected threshold: 0.837
-Test records sent to review: 100
-High-risk test records prepared for SHAP explanation: 50
+Test records sent to Review: 100
+High-risk Review records prepared for SHAP: 50
 LLM explanations generated: 10
 Explanations passing basic checks: 10 out of 10
+
+Explanation workflow:
+fixed risk policy -> Review records -> local SHAP signals
+-> constrained LLM analyst notes -> basic faithfulness checks
