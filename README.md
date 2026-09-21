@@ -1,36 +1,106 @@
 # Credit Card Fraud Risk Analytics & ML Scoring Dashboard
 
-This project analyzes transaction-level credit card fraud data and builds a machine learning risk-scoring workflow for fraud monitoring and threshold-based review decisions.
+This project analyzes transaction-level credit card fraud data and builds a machine-learning risk-scoring workflow for fraud monitoring, threshold-based review decisions, and analyst-facing explanations.
 
 ## Project Goals
 
 - Analyze fraud patterns across transaction amount and relative time buckets.
-- Build baseline machine learning models for fraud risk scoring.
-- Evaluate model performance under severe class imbalance using precision, recall, F1-score, ROC-AUC, and average precision (AP).
-- Compare fraud-score thresholds to understand false positives, missed fraud, and manual-review workload.
-- Use a simple cost analysis to illustrate threshold tradeoffs.
-- Build a Tableau dashboard to communicate model and threshold results.
-- Use SHAP to identify local model signals for selected high-risk transactions.
+- Train fraud-risk models under severe class imbalance.
+- Separate model training, model selection, threshold tuning, and final testing.
+- Evaluate performance using precision, recall, F1-score, Average Precision (AP), PR-AUC, and reference ROC-AUC.
+- Compare fraud-score thresholds by review workload, missed fraud, and an illustrative business-cost assumption.
+- Use SHAP to identify local model signals for selected high-risk records.
 - Use an LLM to turn verified model evidence into short analyst-facing notes, then run simple rule-based faithfulness checks.
+- Communicate model and threshold tradeoffs through Tableau.
 
-## Overview
+## Data
 
-The project uses the Kaggle Credit Card Fraud Detection dataset with 284,807 transactions, including 492 fraud cases. Because the target is highly imbalanced, accuracy alone is not useful enough for model comparison. The analysis focuses primarily on precision, recall, F1-score, and average precision.
+The project uses the Kaggle Credit Card Fraud Detection dataset with 284,807 transactions, including 492 fraud cases.
 
-Two models are compared:
+The original dataset is not committed because of its size. Download `creditcard.csv` and place it at:
 
-- Logistic Regression with class balancing as a baseline.
-- Random Forest with class balancing as the stronger model used for downstream threshold analysis.
+```text
+data/raw/creditcard.csv
+```
 
-In the current experiment, Random Forest achieved precision 0.648, recall 0.847, F1 0.735, and average precision 0.800 at the default 0.50 threshold. Logistic Regression achieved higher recall but much lower precision.
+`Time` is elapsed seconds from the first recorded transaction, not a true clock-of-day timestamp. The EDA notebook therefore uses the derived 0-23 value only as a relative 24-hour time bucket.
+
+## Modeling Workflow
+
+The modeling workflow uses a stratified 60/20/20 train/validation/test split:
+
+```text
+training set
+-> validation model selection
+-> validation threshold selection
+-> untouched test evaluation
+```
+
+Logistic Regression and Random Forest are trained on the training split. Average Precision (AP) is the primary model-selection metric on validation data because the target is highly imbalanced. PR-AUC is reported separately using trapezoidal integration rather than being used interchangeably with AP.
+
+Validation results:
+
+- Logistic Regression: AP 0.683, precision 0.059, recall 0.899 at threshold 0.50.
+- Random Forest: AP 0.748, precision 0.835, recall 0.768 at threshold 0.50.
+
+Random Forest is therefore selected for downstream scoring.
 
 ## Threshold and Cost Analysis
 
-Random Forest probability scores are evaluated at thresholds from 0.05 to 0.90. Lower thresholds catch more fraud but create more false positives and manual-review workload; higher thresholds reduce workload but miss more fraud.
+Seven candidate thresholds from 0.05 to 0.90 are compared on the validation split.
 
-The simple cost example assigns a $5 cost to each false-positive investigation and adds the dollar amount of missed fraudulent transactions. Under this illustrative assumption, threshold 0.30 has the lowest estimated cost among the tested thresholds.
+The illustrative cost model assigns:
 
-This threshold analysis is exploratory and is performed on the held-out test split used in the notebook. In a production modeling workflow, threshold selection should be performed on a separate validation set and final performance should be reported on an untouched test set.
+- $5 to each false-positive investigation.
+- the transaction amount to each missed fraudulent transaction.
+
+Under this assumption, threshold **0.50** has the lowest estimated validation cost among the tested thresholds.
+
+After the model and threshold are fixed, they are evaluated once on the untouched test split.
+
+Final test results:
+
+- Precision: **0.820**
+- Recall: **0.837**
+- F1-score: **0.828**
+- Average Precision (AP): **0.793**
+- PR-AUC (trapezoidal): **0.795**
+- ROC-AUC (reference): **0.978**
+
+## SHAP + LLM Explanation Layer
+
+The final explanation workflow is implemented in [`notebooks/04_llm_explanation_layer.ipynb`](notebooks/04_llm_explanation_layer.ipynb).
+
+The Random Forest remains the fraud model; the LLM does not predict fraud.
+
+At the validation-selected threshold of 0.50:
+
+- 100 test records are sent to manual review.
+- the 50 highest-scoring review records are prepared for local SHAP explanation.
+- the first 10 prepared records are sent to the OpenAI API for analyst-facing notes.
+- all 10 generated notes pass the project's basic rule-based checks.
+
+The LLM receives only verified evidence: record ID, transaction amount, fraud score, review threshold, and the three strongest positive local SHAP contributions.
+
+Because `V1`-`V28` are anonymized, the prompt explicitly prevents unsupported claims about merchant, cardholder, device, identity, IP address, location, or other real-world meanings.
+
+```text
+Random Forest score
+-> validation-selected threshold
+-> test-set review decision
+-> top 50 high-risk review records
+-> local SHAP signals
+-> 10 LLM analyst notes
+-> basic faithfulness checks
+```
+
+See [`reports/llm_explanations/README.md`](reports/llm_explanations/README.md) for the saved outputs.
+
+## OpenAI API Key
+
+The notebook prompts the user to enter an OpenAI API key at runtime using `getpass`, so the key is hidden while typing and is not saved in notebook output.
+
+Do not commit a real API key to a public repository.
 
 ## Dashboard
 
@@ -38,37 +108,4 @@ Tableau Public dashboard:
 
 [View Tableau Dashboard](https://public.tableau.com/app/profile/qiong.zhou/viz/CreditCardFraudAnalysis_17818274072020/FraudRiskDashboard)
 
-The dashboard was built from the original analytics and model outputs and shows model comparison, precision/recall tradeoffs, review workload, and the simple threshold cost analysis.
-
-## SHAP + LLM Explanation Layer
-
-The final explanation workflow is implemented in [`notebooks/04_llm_explanation_layer.ipynb`](notebooks/04_llm_explanation_layer.ipynb).
-
-The Random Forest remains the fraud model; the LLM does not predict fraud. At threshold 0.30, 271 test-set transactions are sent to review. The notebook selects the 50 highest-scoring review transactions for explanation, then uses SHAP to identify the three strongest positive local contributions for each selected transaction.
-
-For API-cost control, the notebook sends the first 10 prepared explanation records to an OpenAI model. The prompt includes only verified evidence: transaction ID, amount, fraud score, threshold, review decision, and the three SHAP signals. The dataset features are anonymized (`V1`-`V28`), so the prompt explicitly prevents the model from inventing merchant, cardholder, device, identity, location, or other unsupported real-world details.
-
-A final rule-based check verifies that each generated note contains the fraud score, review threshold, and local feature names, and flags unsupported real-world terms. The saved run produced 10 LLM explanations and all 10 passed these basic checks. These checks are intentionally limited and do not replace human review.
-
-```text
-Random Forest score
--> threshold decision
--> top 50 high-risk review records
--> local SHAP signals
--> 10 LLM analyst notes
--> basic faithfulness checks
-```
-
-See [`reports/llm_explanations/README.md`](reports/llm_explanations/README.md) for the saved outputs from this workflow.
-
-## Data
-
-The original dataset is not committed because of its size. Download Kaggle's Credit Card Fraud Detection `creditcard.csv` and place it at:
-
-```text
-data/raw/creditcard.csv
-```
-
-`Time` in this dataset is elapsed seconds from the first recorded transaction, not a true clock-of-day timestamp. The EDA notebook therefore uses the derived 0-23 value only as a relative 24-hour time bucket, not as a verified local hour of day.
-
-The explanation notebook requires `shap`, `openai`, and an OpenAI API key provided through the `OPENAI_API_KEY` environment variable. No API key is stored in this repository.
+The dashboard was built from the original analytics/modeling stage and communicates fraud distribution, model performance, and threshold tradeoffs.
