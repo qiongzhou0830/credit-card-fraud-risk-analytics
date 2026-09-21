@@ -1,0 +1,57 @@
+transaction_id,prompt_for_optional_llm
+486,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 486
+Amount: 1.0
+Fraud score: 0.5350200631358848
+Threshold: 0.3
+Decision: Review
+Risk notes: model score 0.535 meets or exceeds threshold 0.30; transaction amount is 1.00; large anonymized feature values: V4=3.05, V14=-2.85, V17=2.14
+Threshold note: Used the threshold with the lowest estimated business cost.
+
+Write 2 short sentences.
+"
+525,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 525
+Amount: 179.63
+Fraud score: 0.4769180712877557
+Threshold: 0.3
+Decision: Review
+Risk notes: model score 0.477 meets or exceeds threshold 0.30; transaction amount is 179.63; large anonymized feature values: V4=4.24, V14=-3.43, V16=3.00
+Threshold note: Used the threshold with the lowest estimated business cost.
+
+Write 2 short sentences.
+"
+983,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 983
+Amount: 172.68
+Fraud score: 0.4356835145285722
+Threshold: 0.3
+Decision: Review
+Risk notes: model score 0.436 meets or exceeds threshold 0.30; transaction amount is 172.68; large anonymized feature values: V3=-2.42, V14=-2.15, V1=1.71
+Threshold note: Used the threshold with the lowest estimated business cost.
+
+Write 2 short sentences.
+"
+764,"Write a short explanation for a fraud analyst.
+
+Use only the information below. Do not make up merchant, identity, location, device, or transaction history.
+
+Transaction ID: 764
+Amount: 5.6
+Fraud score: 0.4274117337800413
+Threshold: 0.3
+Decision: Review
+Risk notes: model score 0.427 meets or exceeds threshold 0.30; transaction amount is 5.60; large anonymized feature values: V4=4.01, V19=-2.88, V14=-2.33
+Threshold note: Used the threshold with the lowest estimated business cost.
+
+Write 2 short sentences.
+"
