@@ -1,14 +1,14 @@
-
 Project summary:
 I built a fraud classification and risk-scoring pipeline for a highly imbalanced dataset.
-I compared Logistic Regression and Random Forest using precision, recall, and PR-AUC, then tested different thresholds to measure missed fraud and manual-review workload.
-For flagged transactions, I used SHAP to find the local features that increased each fraud score.
-I then sent only the verified score, threshold, amount, and SHAP signals to an LLM to create a short analyst note.
-Finally, I ran simple checks for missing evidence and unsupported real-world claims.
+I compared Logistic Regression and Random Forest using precision, recall, F1-score, and average precision, then tested different thresholds to measure false positives, missed fraud, and manual-review workload.
+For the selected high-risk transactions, I used SHAP to identify the strongest positive local feature contributions to each fraud score.
+I then sent only verified model evidence to an LLM to create short analyst-facing notes.
+Finally, I ran simple rule-based checks for missing evidence and unsupported real-world claims.
 
 Selected model: Random Forest
-PR-AUC: 0.800
-Selected threshold: 0.3
-Flagged transactions prepared for explanation: 50
+Average precision: 0.800
+Selected threshold: 0.30
+Transactions sent to review at threshold 0.30: 271
+Highest-scoring transactions prepared for SHAP explanation: 50
 LLM explanations generated: 10
 Explanations passing basic checks: 10 out of 10
