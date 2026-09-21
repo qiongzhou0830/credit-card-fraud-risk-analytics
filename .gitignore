@@ -2,3 +2,4 @@ data/raw/
 *.csv
 !data/sample/*.csv
 !data/processed/*.csv
+!reports/llm_explanations/*.csv
