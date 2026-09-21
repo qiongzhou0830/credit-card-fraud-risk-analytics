@@ -1,2 +1,2 @@
-model,precision,recall,f1,pr_auc,accuracy_reference,roc_auc_reference
-Random Forest,0.6484375,0.8469387755102041,0.7345132743362832,0.799998102786367,0.9989466661985184,0.9818797876494436
+split,model,precision_at_0_5,recall_at_0_5,f1_at_0_5,average_precision,pr_auc_trapezoid,accuracy_reference,roc_auc_reference
+validation,Random Forest,0.8351648351648352,0.7676767676767676,0.8,0.7476871269796023,0.7466763598328171,0.9993328885923949,0.9749813347231703
