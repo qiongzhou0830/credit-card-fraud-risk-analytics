@@ -1,5 +1,0 @@
-transaction_id,Amount,fraud_score,fraud_score_for_explanation,selected_threshold,review_decision,risk_notes,threshold_note
-486,1.0,0.5350200631358848,0.5350200631358848,0.3,Review,"model score 0.535 meets or exceeds threshold 0.30; transaction amount is 1.00; large anonymized feature values: V4=3.05, V14=-2.85, V17=2.14",Used the threshold with the lowest estimated business cost.
-525,179.63,0.4769180712877557,0.4769180712877557,0.3,Review,"model score 0.477 meets or exceeds threshold 0.30; transaction amount is 179.63; large anonymized feature values: V4=4.24, V14=-3.43, V16=3.00",Used the threshold with the lowest estimated business cost.
-983,172.68,0.4356835145285722,0.4356835145285722,0.3,Review,"model score 0.436 meets or exceeds threshold 0.30; transaction amount is 172.68; large anonymized feature values: V3=-2.42, V14=-2.15, V1=1.71",Used the threshold with the lowest estimated business cost.
-764,5.6,0.4274117337800413,0.4274117337800413,0.3,Review,"model score 0.427 meets or exceeds threshold 0.30; transaction amount is 5.60; large anonymized feature values: V4=4.01, V19=-2.88, V14=-2.33",Used the threshold with the lowest estimated business cost.
